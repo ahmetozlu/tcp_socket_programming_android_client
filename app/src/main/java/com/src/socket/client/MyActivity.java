@@ -1,26 +1,20 @@
-package com.prashant.adesara.socket.client;
+package com.src.socket.client;
 
 import java.util.ArrayList;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.prashant.custom.adapter.MyCustomAdapter;
+import com.src.socket.client.R;
+import com.src.custom.adapter.MyCustomAdapter;
 
-import static com.prashant.adesara.socket.client.WelcomePage.getServerIp;
-
-/**
- * @author Prashant Adesara
- * Display Activity with sending messages to server 
- * */
+/*Display Activity with sending messages to server*/
 
 @SuppressLint("NewApi")
 public class MyActivity extends Activity
@@ -39,9 +33,7 @@ public class MyActivity extends Activity
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Intent intent = getIntent();
-        ipAddressOfServerDevice = getServerIp();
-                //intent.getExtras().getString("ipAddressOfServerDevice");
+        ipAddressOfServerDevice = WelcomePage.getServerIp();
 
         arrayList = new ArrayList<String>();
  
@@ -74,20 +66,14 @@ public class MyActivity extends Activity
                 editText.setText("");
             }
         });
-
-        /*Toast.makeText(MyActivity.this,ipAddressOfServerDevice ,
-                Toast.LENGTH_LONG).show();*/
     }
     
-    /**
-     * @author Prashant Adesara
-     * receive the message from server with asyncTask  
-     * */
+    /*receive the message from server with asyncTask*/
     public class connectTask extends AsyncTask<String,String,TCPClient> {
         @Override
         protected TCPClient doInBackground(String... message) 
         {
-            //we create a TCPClient object and
+            //create a TCPClient object and
             mTcpClient = new TCPClient(new TCPClient.OnMessageReceived()
             {
                 @Override

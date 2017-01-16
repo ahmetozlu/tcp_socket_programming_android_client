@@ -1,4 +1,4 @@
-package com.prashant.custom.adapter;
+package com.src.custom.adapter;
 
 import java.util.ArrayList;
 
@@ -9,12 +9,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.prashant.adesara.socket.client.R;
+import com.src.socket.client.R;
 
-/**
- * @author Prashant Adesara 
- * Custom adapter to view list view items
- * */
 public class MyCustomAdapter extends BaseAdapter
 {
 	private ArrayList<String> mListItems;

@@ -1,4 +1,4 @@
-package com.prashant.adesara.socket.client;
+package com.src.socket.client;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static com.prashant.adesara.socket.client.R.id.editText;
+import com.src.socket.client.R;
 
 /**
  * Created by ErArGe-5 on 30.12.2016.

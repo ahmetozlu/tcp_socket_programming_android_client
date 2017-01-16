@@ -1,4 +1,4 @@
-package com.prashant.adesara.socket.client;
+package com.src.socket.client;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,14 +7,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
-
-import android.content.Intent;
 import android.util.Log;
-
-/**
- * @author Prashant Adesara
- * Handle the TCPClient with Socket Server. 
- * */
 
 public class TCPClient {
  
@@ -22,8 +15,7 @@ public class TCPClient {
     /**
 	 * Specify the Server Ip Address here. Whereas our Socket Server is started.
 	 * */
-	public
-    String serverIp = "192.168.1.15"; // your computer IP address
+	public String serverIp = "192.168.1.15"; // your computer IP address
     public static final int SERVERPORT = 7755;
     private OnMessageReceived mMessageListener = null;
     private boolean mRun = false;
