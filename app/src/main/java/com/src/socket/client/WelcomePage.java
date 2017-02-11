@@ -33,7 +33,7 @@ public class WelcomePage  extends Activity {
                     Toast.makeText(WelcomePage.this, "Invalid IP Address!", Toast.LENGTH_LONG).show();
                 }
                 else {
-                    Intent i = new Intent( view.getContext(), MainPage.class);
+                    Intent i = new Intent( view.getContext(), MyActivity.class);
                     startActivity(i);
                 }
             }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hsm Test Application</string>
+    <string name="app_name">TCP Socket Test Application</string>
     <string name="hello_world">Hello world!</string>
     <string name="send">Send</string>
 </resources>
