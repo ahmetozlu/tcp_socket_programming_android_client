@@ -22,3 +22,26 @@ This program is about TCP socket programming client side with Android. This is a
 
 See this repository for more information about server side in c programming: https://github.com/ahmetozlu/tcp_socket_programming_c_programming_server
 ***
+
+## Installation
+
+**How to build and run this source?**
+
+  1. Clone project by using Android Studio
+  2. Select and build module app
+  
+## Citation
+If you use this code for your publications, please cite it as:
+
+    @ONLINE{vdtc,
+        author = "Ahmet Özlü",
+        title  = "TCP Client on Android OS",
+        year   = "2017",
+        url    = "https://github.com/ahmetozlu/tcp_socket_programming_android_client"
+    }
+
+## Author
+Ahmet Özlü
+
+## License
+This system is available under the MIT license. See the LICENSE file for more info.
